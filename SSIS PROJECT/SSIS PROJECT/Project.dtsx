@@ -1,0 +1,2815 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/7/2025 4:52:42 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-KD4F13Q"
+  DTS:CreatorName="DESKTOP-KD4F13Q\qs"
+  DTS:DTSID="{60A9C0FD-CB02-41DA-B188-9A61D37C3480}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="4105"
+  DTS:ObjectName="Project"
+  DTS:PackageType="5"
+  DTS:VersionBuild="170"
+  DTS:VersionGUID="{4DB0FA09-B932-4B89-9937-0AAF7451A184}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Crop_Yield_error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A13DDA14-E4CD-4301-A6EF-F962237E879B}"
+      DTS:ObjectName="Crop_Yield_error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="4105"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\qs142\Desktop\Patrick Courses\CLASS WORK\PROJECT BI\PROJECT DATA_USE\CSVs\yield_df - error file.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Area"
+              DTS:DTSID="{8F77B361-FBAA-4E36-A1AA-CC2C0733DD5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Item"
+              DTS:DTSID="{4F5E6FF8-24AB-4CFC-8B24-BEEB288B4524}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{9937B13B-56F6-49A3-9473-F44DDCAB15A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Yield"
+              DTS:DTSID="{025EBA11-658F-4F0F-A679-7E656293534E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Avg Rainfall"
+              DTS:DTSID="{9F100400-35BA-42FB-9FE8-1E6675E599F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pesticides"
+              DTS:DTSID="{881173F9-4854-45EB-976C-AAC9E3C4956C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Temperature"
+              DTS:DTSID="{4898AFFD-4829-4583-A1CB-4BBA75EBE936}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Crop_Yield_No_error]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8A2FF20E-4D0D-4A89-920C-D2801C8A3150}"
+      DTS:ObjectName="Crop_Yield_No_error">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="4105"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\qs142\Desktop\Patrick Courses\CLASS WORK\PROJECT BI\PROJECT DATA_USE\CSVs\yield_df.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="24"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Area"
+              DTS:DTSID="{A2C8CF82-2FAC-4800-B1AE-94F4BB6F22BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Item"
+              DTS:DTSID="{395F0416-864E-4D6E-9E1C-8F53D9A9B66F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{45BDED1F-947C-41C5-8388-89C2103E6697}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Yield"
+              DTS:DTSID="{4CF9F7F4-7652-4E8F-8E97-10647D3DBDB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Avg Rainfall"
+              DTS:DTSID="{6A5528F1-1BC1-4A0D-983B-BE39CF63C625}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Pesticides"
+              DTS:DTSID="{C842FCE3-09A1-418D-95AB-781FE1CD5903}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="5"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Temperature"
+              DTS:DTSID="{97FD0B9B-7DB3-4D29-A4E7-30BBC79162CB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C3C9B61F-88F8-40DF-B864-EB727B0D380D}"
+      DTS:ObjectName="tgt.SSIS_PROJECT">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.\sqldw;Initial Catalog=SSIS PROJECT;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{C3C9B61F-88F8-40DF-B864-EB727B0D380D}.\sqldw.SSIS PROJECT;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Dimension Builds"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{531866DD-B06D-4352-8696-0F1A367C46F4}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dimension Builds">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Dimension Builds\Area Dim"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6CB71F57-76F2-43BE-A359-ED4DE706B3A2}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Area Dim"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimension Builds\Area Dim\dim Area Q"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="dim Area Q"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT Area
+FROM stg.import_use
+GROUP BY Area
+;</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Builds\Area Dim\dim Area Q.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].Columns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].ExternalColumns[Area]"
+                          length="24"
+                          lineageId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].Columns[Area]"
+                          name="Area"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].ExternalColumns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          length="24"
+                          name="Area" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output].Columns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          length="24"
+                          lineageId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output].Columns[Area]"
+                          name="Area" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup"
+                  componentClassID="Microsoft.Lookup"
+                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                  name="Dim_Area_lookup"
+                  usesDispositions="true"
+                  version="6">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement that generates the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dim].[Area_use]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommandParam"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dim].[Area_use]) [refTable]
+where [refTable].[Area] = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the type of connection used to access the reference dataset."
+                      name="ConnectionType"
+                      typeConverter="LookupConnectionType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the cache type of the lookup table."
+                      name="CacheType"
+                      typeConverter="CacheType">2</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                      name="NoMatchBehavior"
+                      typeConverter="LookupNoMatchBehavior">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                      name="NoMatchCachePercentage">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                      name="MaxMemoryUsage">25</property>
+                    <property
+                      dataType="System.Int64"
+                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                      name="MaxMemoryUsage64">25</property>
+                    <property
+                      dataType="System.String"
+                      description="Indicates whether to reference metadata in an XML format."
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Area_Code" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Area" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                      name="ParameterMap">#{Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].Columns[Area]};</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                      name="TreatDuplicateKeysAsError">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="Connection manager used to access lookup data."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Inputs[Lookup Input]"
+                      name="Lookup Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Inputs[Lookup Input].Columns[Area]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="24"
+                          cachedName="Area"
+                          lineageId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].Columns[Area]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">Area</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup Match Output]"
+                      errorOrTruncationOperation="Lookup"
+                      exclusionGroup="1"
+                      name="Lookup Match Output"
+                      synchronousInputId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup No Match Output]"
+                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                      exclusionGroup="1"
+                      name="Lookup No Match Output"
+                      synchronousInputId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Lookup Error Output"
+                      synchronousInputId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimension Builds\Area Dim\Dim_Area_use"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="Dim_Area_use"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dim].[Area_use]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input].Columns[Area]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="24"
+                          cachedName="Area"
+                          externalMetadataColumnId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
+                          lineageId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output].Columns[Area]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input].ExternalColumns[Area_Code]"
+                          dataType="i4"
+                          name="Area_Code" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Area" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Area Dim\Dim_Area_use.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Area Dim\Dim_Area_use.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Area Dim\Dim_Area_use.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimension Builds\Area Dim.Paths[Lookup No Match Output]"
+                  endId="Package\Dimension Builds\Area Dim\Dim_Area_use.Inputs[OLE DB Destination Input]"
+                  name="Lookup No Match Output"
+                  startId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\Dimension Builds\Area Dim.Paths[OLE DB Source Output]"
+                  endId="Package\Dimension Builds\Area Dim\Dim_Area_lookup.Inputs[Lookup Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimension Builds\Area Dim\dim Area Q.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Dimension Builds\Item Dim"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{B729421D-3FE6-4589-9804-74A126DC7EDE}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Item Dim"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Dimension Builds\Item Dim\dim Item Q"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="dim Item Q"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT item
+FROM stg.import_use
+GROUP BY Item</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Builds\Item Dim\dim Item Q.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].Columns[item]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].ExternalColumns[item]"
+                          length="20"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].Columns[item]"
+                          name="item"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].ExternalColumns[item]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="item" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output].Columns[item]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output].Columns[item]"
+                          name="item" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimension Builds\Item Dim\dim Item_use"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="dim Item_use"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dim].[Item_use]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Builds\Item Dim\dim Item_use.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input].Columns[item]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="item"
+                          externalMetadataColumnId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input].ExternalColumns[Item]"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].Columns[item]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input].ExternalColumns[Item_Code]"
+                          dataType="i4"
+                          name="Item_Code" />
+                        <externalMetadataColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input].ExternalColumns[Item]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Item" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Builds\Item Dim\dim Item_use.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item_use.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item_use.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\dim Item_use.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item_use.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Dimension Builds\Item Dim\Item Dim Lookup"
+                  componentClassID="Microsoft.Lookup"
+                  contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                  description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                  name="Item Dim Lookup"
+                  usesDispositions="true"
+                  version="6">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the SQL statement that generates the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dim].[Item_use]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                      expressionType="Notify"
+                      name="SqlCommandParam"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dim].[Item_use]) [refTable]
+where [refTable].[Item] = ?</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the type of connection used to access the reference dataset."
+                      name="ConnectionType"
+                      typeConverter="LookupConnectionType">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the cache type of the lookup table."
+                      name="CacheType"
+                      typeConverter="CacheType">2</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                      name="NoMatchBehavior"
+                      typeConverter="LookupNoMatchBehavior">1</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                      name="NoMatchCachePercentage">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                      name="MaxMemoryUsage">25</property>
+                    <property
+                      dataType="System.Int64"
+                      description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                      name="MaxMemoryUsage64">25</property>
+                    <property
+                      dataType="System.String"
+                      description="Indicates whether to reference metadata in an XML format."
+                      name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Item_Code" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Item" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                      name="ParameterMap">#{Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].Columns[item]};</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                      name="TreatDuplicateKeysAsError">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="Connection manager used to access lookup data."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Inputs[Lookup Input]"
+                      name="Lookup Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Inputs[Lookup Input].Columns[item]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="item"
+                          lineageId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output].Columns[item]">
+                          <properties>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the column in the reference table that a column joins."
+                              name="JoinToReferenceColumn">Item</property>
+                            <property
+                              dataType="System.Null"
+                              description="Specifies the column in the reference table from which a column is copied."
+                              name="CopyFromReferenceColumn" />
+                          </properties>
+                        </inputColumn>
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup Match Output]"
+                      errorOrTruncationOperation="Lookup"
+                      exclusionGroup="1"
+                      name="Lookup Match Output"
+                      synchronousInputId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup No Match Output]"
+                      description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                      exclusionGroup="1"
+                      name="Lookup No Match Output"
+                      synchronousInputId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Inputs[Lookup Input]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Lookup Error Output"
+                      synchronousInputId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Inputs[Lookup Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Dimension Builds\Item Dim.Paths[Lookup No Match Output]"
+                  endId="Package\Dimension Builds\Item Dim\dim Item_use.Inputs[OLE DB Destination Input]"
+                  name="Lookup No Match Output"
+                  startId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\Dimension Builds\Item Dim.Paths[OLE DB Source Output]"
+                  endId="Package\Dimension Builds\Item Dim\Item Dim Lookup.Inputs[Lookup Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Dimension Builds\Item Dim\dim Item Q.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Fact Table Build"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{936399B0-AAA3-4D50-AE79-8956DADE6E7D}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Fact Table Build">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Fact Table Build\Data Flow Task"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{D4B77612-E125-4246-8A02-6B08EEA0910C}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Fact Table Build\Data Flow Task\fact_Project_use"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="fact_Project_use"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[fact].[Project_use]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Area_Code]"
+                          cachedDataType="i4"
+                          cachedName="Area_Code"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Area_Code]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Area_Code]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Item_Code]"
+                          cachedDataType="i4"
+                          cachedName="Item_Code"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Item_Code]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Item_Code]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Year]"
+                          cachedDataType="i8"
+                          cachedName="Year"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Year]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Yield]"
+                          cachedDataType="i8"
+                          cachedName="Yield"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Yield]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Yield]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Avg Rainfall]"
+                          cachedDataType="i8"
+                          cachedName="Avg Rainfall"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Avg Rainfall]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Avg Rainfall]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Pesticides]"
+                          cachedDataType="r8"
+                          cachedName="Pesticides"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Pesticides]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pesticides]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[Temperature]"
+                          cachedDataType="r8"
+                          cachedName="Temperature"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Temperature]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Temperature]" />
+                        <inputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].Columns[LastLoaded]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="LastLoaded"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[LastLoaded]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastLoaded]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Area_Code]"
+                          dataType="i4"
+                          name="Area_Code" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Item_Code]"
+                          dataType="i4"
+                          name="Item_Code" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                          dataType="i8"
+                          name="Year" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Yield]"
+                          dataType="i8"
+                          name="Yield" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Avg Rainfall]"
+                          dataType="i8"
+                          name="Avg Rainfall" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Pesticides]"
+                          dataType="r8"
+                          name="Pesticides" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[Temperature]"
+                          dataType="r8"
+                          name="Temperature" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input].ExternalColumns[LastLoaded]"
+                          dataType="dbTimeStamp"
+                          name="LastLoaded" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Fact Table Build\Data Flow Task\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT ar.Area_Code
+		,it.Item_Code
+        ,f.Year
+      ,f.Yield
+      ,f.[Avg Rainfall]
+      ,f.Pesticides
+      ,f.Temperature
+	  ,getdate() as 'LastLoaded'
+FROM stg.import_use f
+	LEFT OUTER JOIN dim.Area_use ar
+	ON f.Area = ar.Area
+	LEFT OUTER JOIN dim.Item_use it
+	ON f.Item = it.Item
+	;</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Area_Code]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Area_Code]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Area_Code]"
+                          name="Area_Code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Item_Code]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Item_Code]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Item_Code]"
+                          name="Item_Code"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Year]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Year]"
+                          name="Year"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Yield]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Yield]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Yield]"
+                          name="Yield"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Avg Rainfall]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Avg Rainfall]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Avg Rainfall]"
+                          name="Avg Rainfall"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pesticides]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pesticides]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Pesticides]"
+                          name="Pesticides"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Temperature]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Temperature]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Temperature]"
+                          name="Temperature"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastLoaded]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastLoaded]"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastLoaded]"
+                          name="LastLoaded"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Area_Code]"
+                          dataType="i4"
+                          name="Area_Code" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Item_Code]"
+                          dataType="i4"
+                          name="Item_Code" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                          dataType="i8"
+                          name="Year" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Yield]"
+                          dataType="i8"
+                          name="Yield" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Avg Rainfall]"
+                          dataType="i8"
+                          name="Avg Rainfall" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Pesticides]"
+                          dataType="r8"
+                          name="Pesticides" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Temperature]"
+                          dataType="r8"
+                          name="Temperature" />
+                        <externalMetadataColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastLoaded]"
+                          dataType="dbTimeStamp"
+                          name="LastLoaded" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Area_Code]"
+                          dataType="i4"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Area_Code]"
+                          name="Area_Code" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Item_Code]"
+                          dataType="i4"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Item_Code]"
+                          name="Item_Code" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Year]"
+                          dataType="i8"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Year]"
+                          name="Year" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Yield]"
+                          dataType="i8"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Yield]"
+                          name="Yield" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Avg Rainfall]"
+                          dataType="i8"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Avg Rainfall]"
+                          name="Avg Rainfall" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pesticides]"
+                          dataType="r8"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Pesticides]"
+                          name="Pesticides" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Temperature]"
+                          dataType="r8"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Temperature]"
+                          name="Temperature" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastLoaded]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastLoaded]"
+                          name="LastLoaded" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Fact Table Build\Data Flow Task.Paths[OLE DB Source Output]"
+                  endId="Package\Fact Table Build\Data Flow Task\fact_Project_use.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Fact Table Build\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Fact Table Build\Truncate Fact"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{E353142E-9DED-469F-9930-1ABBB13B1D3B}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate Fact"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{C3C9B61F-88F8-40DF-B864-EB727B0D380D}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE fact.Project_use" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Fact Table Build.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{259AED43-D6F5-403B-AE34-06FC0829558C}"
+          DTS:From="Package\Fact Table Build\Truncate Fact"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Fact Table Build\Data Flow Task" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Staging import"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{790772A2-00ED-4BC2-B1F5-9FA160B91B5D}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Staging import">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Staging import\Import to Stage"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{DF309831-62BD-48B3-BB51-7F05B5910B25}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Import to Stage"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Staging import\Import to Stage\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="4105"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Staging import\Import to Stage\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Crop_Yield_error]"
+                      connectionManagerRefId="Package.ConnectionManagers[Crop_Yield_error]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Area]"
+                          length="24"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Area]"
+                          name="Area"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Item]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Item]"
+                          length="20"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Item]"
+                          name="Item"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Year]"
+                          name="Year"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Yield]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Yield]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Yield]"
+                          name="Yield"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Avg Rainfall]"
+                          dataType="i8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Avg Rainfall]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Avg Rainfall]"
+                          name="Avg Rainfall"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Pesticides]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Pesticides]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Pesticides]"
+                          name="Pesticides"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Temperature]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="RedirectRow"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Temperature]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Temperature]"
+                          name="Temperature"
+                          truncationRowDisposition="RedirectRow">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Area" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Item]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Item" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Year" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Yield]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Yield" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Avg Rainfall]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Avg Rainfall" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Pesticides]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Pesticides" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Temperature]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Temperature" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Staging import\Import to Stage\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[stg].[import_use]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Staging import\Import to Stage\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Area]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="24"
+                          cachedName="Area"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Area]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Item]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="Item"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Item]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Item]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                          cachedDataType="i8"
+                          cachedName="Year"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Year]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Yield]"
+                          cachedDataType="i8"
+                          cachedName="Yield"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Yield]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Yield]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Avg Rainfall]"
+                          cachedDataType="i8"
+                          cachedName="Avg Rainfall"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Avg Rainfall]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Avg Rainfall]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Pesticides]"
+                          cachedDataType="r8"
+                          cachedName="Pesticides"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pesticides]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Pesticides]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Temperature]"
+                          cachedDataType="r8"
+                          cachedName="Temperature"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Temperature]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output].Columns[Temperature]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Area]"
+                          codePage="1252"
+                          dataType="str"
+                          length="24"
+                          name="Area" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Item]"
+                          codePage="1252"
+                          dataType="str"
+                          length="20"
+                          name="Item" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                          dataType="i8"
+                          name="Year" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Yield]"
+                          dataType="i8"
+                          name="Yield" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Avg Rainfall]"
+                          dataType="i8"
+                          name="Avg Rainfall" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Pesticides]"
+                          dataType="r8"
+                          name="Pesticides" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Temperature]"
+                          dataType="r8"
+                          name="Temperature" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Staging import\Import to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Staging import\Import to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Staging import\Import to Stage\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Staging import\Import to Stage\OLE DB Destination 1"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination 1"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[error].[Project]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      connectionManagerRefId="Package.ConnectionManagers[tgt.SSIS_PROJECT]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[Flat File Source Error Output Column]"
+                          cachedCodepage="1252"
+                          cachedDataType="text"
+                          cachedName="Flat File Source Error Output Column"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ErrorCode]"
+                          cachedDataType="i4"
+                          cachedName="ErrorCode"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]" />
+                        <inputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ErrorColumn]"
+                          cachedDataType="i4"
+                          cachedName="ErrorColumn"
+                          externalMetadataColumnId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
+                          lineageId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          name="Flat File Source Error Output Column" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ErrorCode]"
+                          dataType="i4"
+                          name="ErrorCode" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ErrorColumn]"
+                          dataType="i4"
+                          name="ErrorColumn" />
+                        <externalMetadataColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[lasterror]"
+                          dataType="dbTimeStamp"
+                          name="lasterror" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Staging import\Import to Stage\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Staging import\Import to Stage\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Staging import\Import to Stage\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Staging import\Import to Stage.Paths[Flat File Source Error Output]"
+                  endId="Package\Staging import\Import to Stage\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Error Output"
+                  startId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Error Output]" />
+                <path
+                  refId="Package\Staging import\Import to Stage.Paths[Flat File Source Output]"
+                  endId="Package\Staging import\Import to Stage\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Staging import\Import to Stage\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Staging import\Truncate Staging"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{9EFDD903-3750-4957-A80D-95CE214C7801}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate Staging"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{C3C9B61F-88F8-40DF-B864-EB727B0D380D}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE stg.import_use" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Staging import.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{EC48637D-AC5D-427D-9D4E-86BE9DAE237F}"
+          DTS:From="Package\Staging import\Truncate Staging"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Staging import\Import to Stage" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{6871EEF2-C908-467E-91DA-B7D22FD11C18}"
+      DTS:From="Package\Staging import"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Dimension Builds" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4F7C8485-56B9-4338-9404-928A4469D21D}"
+      DTS:From="Package\Dimension Builds"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Fact Table Build" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157.6,41.6"
+          Id="Package\Staging import\Truncate Staging"
+          TopLeft="5.62592164092236,12.0296289117837" />
+        <NodeLayout
+          Size="149.6,41.6"
+          Id="Package\Staging import\Import to Stage"
+          TopLeft="24.2105767101578,98.8338611123907" />
+        <EdgeLayout
+          Id="Package\Staging import.PrecedenceConstraints[Constraint]"
+          TopLeft="84.4259216409224,53.6296289117837">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="14.5846550692354,45.204232200607"
+              Start="0,0"
+              End="14.5846550692354,37.704232200607">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.6021161003035" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.6021161003035"
+                    Point2="0,22.6021161003035"
+                    Point3="4,22.6021161003035" />
+                  <mssgle:LineSegment
+                    End="10.5846550692354,22.6021161003035" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.5846550692354,22.6021161003035"
+                    Point2="14.5846550692354,22.6021161003035"
+                    Point3="14.5846550692354,26.6021161003035" />
+                  <mssgle:LineSegment
+                    End="14.5846550692354,37.704232200607" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="204.8,206.4"
+          Size="204.8,249.6"
+          Id="Package\Staging import"
+          TopLeft="353.042308752946,23.5238093602278" />
+        <NodeLayout
+          Size="121.6,41.6"
+          Id="Package\Dimension Builds\Area Dim"
+          TopLeft="55.6740536355686,12.0740735450645" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Dimension Builds\Item Dim"
+          TopLeft="203.822193689259,13.9999994575978" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="344.8,110.4"
+          Size="344.8,153.6"
+          Id="Package\Dimension Builds"
+          TopLeft="282.539667102396,343.365076977362" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Fact Table Build\Data Flow Task"
+          TopLeft="42.9205838388256,112.416928983229" />
+        <NodeLayout
+          Size="142.4,41.6"
+          Id="Package\Fact Table Build\Truncate Fact"
+          TopLeft="32.0740235848949,12.6814799413269" />
+        <EdgeLayout
+          Id="Package\Fact Table Build.PrecedenceConstraints[Constraint]"
+          TopLeft="103.274023584895,54.2814799413269">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="14.8465602539306,58.135449041902"
+              Start="0,0"
+              End="14.8465602539306,50.635449041902">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.067724520951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.067724520951"
+                    Point2="0,29.067724520951"
+                    Point3="4,29.067724520951" />
+                  <mssgle:LineSegment
+                    End="10.8465602539306,29.067724520951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10.8465602539306,29.067724520951"
+                    Point2="14.8465602539306,29.067724520951"
+                    Point3="14.8465602539306,33.067724520951" />
+                  <mssgle:LineSegment
+                    End="14.8465602539306,50.635449041902" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="280.8,208.8"
+          Size="280.8,252"
+          Id="Package\Fact Table Build"
+          TopLeft="351.851832627515,561.608462111071" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="455.190987927671,273.123809360228">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,70.241267617134"
+              Start="0,0"
+              End="0,62.741267617134">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.741267617134" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="454.939667102396,496.965076977362">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="37.3121655251193,64.6433851337092"
+              Start="0,0"
+              End="37.3121655251193,57.1433851337092">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3216925668546" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.3216925668546"
+                    Point2="0,32.3216925668546"
+                    Point3="4,32.3216925668546" />
+                  <mssgle:LineSegment
+                    End="33.3121655251193,32.3216925668546" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.3121655251193,32.3216925668546"
+                    Point2="37.3121655251193,32.3216925668546"
+                    Point3="37.3121655251193,36.3216925668546" />
+                  <mssgle:LineSegment
+                    End="37.3121655251193,57.1433851337092" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Staging import\Import to Stage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Staging import\Import to Stage\Flat File Source"
+          TopLeft="264.999985521039,52.8666662990384" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Staging import\Import to Stage\OLE DB Destination"
+          TopLeft="342.499981286626,215.799998499354" />
+        <EdgeLayout
+          Id="Package\Staging import\Import to Stage.Paths[Flat File Source Output]"
+          TopLeft="340.599985521039,94.4666662990384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="87.4999957655868,121.333332200315"
+              Start="0,0"
+              End="87.4999957655868,113.833332200315">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.6666661001577" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.6666661001577"
+                    Point2="0,60.6666661001577"
+                    Point3="4,60.6666661001577" />
+                  <mssgle:LineSegment
+                    End="83.4999957655868,60.6666661001577" />
+                  <mssgle:CubicBezierSegment
+                    Point1="83.4999957655868,60.6666661001577"
+                    Point2="87.4999957655868,60.6666661001577"
+                    Point3="87.4999957655868,64.6666661001577" />
+                  <mssgle:LineSegment
+                    End="87.4999957655868,113.833332200315" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="180,41.6"
+          Id="Package\Staging import\Import to Stage\OLE DB Destination 1"
+          TopLeft="625.833299139309,165.533332182235" />
+        <EdgeLayout
+          Id="Package\Staging import\Import to Stage.Paths[Flat File Source Error Output]"
+          TopLeft="364.466652187706,94.4666662990384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="351.366646951604,71.0666658831968"
+              Start="0,0"
+              End="351.366646951604,63.5666658831968">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.8731584949533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.8731584949533"
+                    Point2="0,28.8731584949533"
+                    Point3="4,28.8731584949533" />
+                  <mssgle:LineSegment
+                    End="347.366646951604,28.8731584949533" />
+                  <mssgle:CubicBezierSegment
+                    Point1="347.366646951604,28.8731584949533"
+                    Point2="351.366646951604,28.8731584949533"
+                    Point3="351.366646951604,32.8731584949533" />
+                  <mssgle:LineSegment
+                    End="351.366646951604,63.5666658831968" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="112.056936757052,33.8731584949533,127.2527734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Dimension Builds\Area Dim">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="130.4,41.6"
+          Id="Package\Dimension Builds\Area Dim\dim Area Q"
+          TopLeft="116.999998256564,46.9999992996454" />
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Dimension Builds\Area Dim\Dim_Area_lookup"
+          TopLeft="180.99999730289,197.99999704957" />
+        <EdgeLayout
+          Id="Package\Dimension Builds\Area Dim.Paths[OLE DB Source Output]"
+          TopLeft="182.199998256564,88.5999992996454">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="79.1999990463257,109.399997749925"
+              Start="0,0"
+              End="79.1999990463257,101.899997749925">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.6999988749623" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.6999988749623"
+                    Point2="0,54.6999988749623"
+                    Point3="4,54.6999988749623" />
+                  <mssgle:LineSegment
+                    End="75.1999990463257,54.6999988749623" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.1999990463257,54.6999988749623"
+                    Point2="79.1999990463257,54.6999988749623"
+                    Point3="79.1999990463257,58.6999988749623" />
+                  <mssgle:LineSegment
+                    End="79.1999990463257,101.899997749925" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Dimension Builds\Area Dim\Dim_Area_use"
+          TopLeft="283.99999576807,360.999994620681" />
+        <EdgeLayout
+          Id="Package\Dimension Builds\Area Dim.Paths[Lookup No Match Output]"
+          TopLeft="261.39999730289,239.59999704957">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="96.1999984651804,121.399997571111"
+              Start="0,0"
+              End="96.1999984651804,113.899997571111">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.6999987855554" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,56.6999987855554"
+                    Point2="0,60.6999987855554"
+                    Point3="4,60.6999987855554" />
+                  <mssgle:LineSegment
+                    End="92.1999984651804,60.6999987855554" />
+                  <mssgle:CubicBezierSegment
+                    Point1="92.1999984651804,60.6999987855554"
+                    Point2="96.1999984651804,60.6999987855554"
+                    Point3="96.1999984651804,64.6999987855554" />
+                  <mssgle:LineSegment
+                    End="96.1999984651804,113.899997571111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-7.70638748615978,65.6999987855554,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Builds\Area Dim\dim Area Q">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Dimension Builds\Item Dim">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="128.8,41.6"
+          Id="Package\Dimension Builds\Item Dim\dim Item Q"
+          TopLeft="140.999997898936,75.9999988675118" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Dimension Builds\Item Dim\Item Dim Lookup"
+          TopLeft="234.999996498227,185.999997228384" />
+        <EdgeLayout
+          Id="Package\Dimension Builds\Item Dim.Paths[OLE DB Source Output]"
+          TopLeft="205.399997898936,117.599998867512">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="107.999998599291,68.3999983608723"
+              Start="0,0"
+              End="107.999998599291,60.8999983608723">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.1999991804361" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.1999991804361"
+                    Point2="0,34.1999991804361"
+                    Point3="4,34.1999991804361" />
+                  <mssgle:LineSegment
+                    End="103.999998599291,34.1999991804361" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103.999998599291,34.1999991804361"
+                    Point2="107.999998599291,34.1999991804361"
+                    Point3="107.999998599291,38.1999991804361" />
+                  <mssgle:LineSegment
+                    End="107.999998599291,60.8999983608723" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="140.8,41.6"
+          Id="Package\Dimension Builds\Item Dim\dim Item_use"
+          TopLeft="327.999995112419,339.999994933605" />
+        <EdgeLayout
+          Id="Package\Dimension Builds\Item Dim.Paths[Lookup No Match Output]"
+          TopLeft="313.399996498227,227.599997228384">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="84.999998614192,112.399997705221"
+              Start="0,0"
+              End="84.999998614192,104.899997705221">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.1999988526106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,52.1999988526106"
+                    Point2="0,56.1999988526106"
+                    Point3="4,56.1999988526106" />
+                  <mssgle:LineSegment
+                    End="80.999998614192,56.1999988526106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="80.999998614192,56.1999988526106"
+                    Point2="84.999998614192,56.1999988526106"
+                    Point3="84.999998614192,60.1999988526106" />
+                  <mssgle:LineSegment
+                    End="84.999998614192,104.899997705221" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-13.306387411654,61.1999988526106,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Builds\Item Dim\dim Item Q">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Builds\Item Dim\Item Dim Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dim].[Item_use]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Builds\Item Dim\dim Item_use">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Fact Table Build\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Fact Table Build\Data Flow Task\OLE DB Source"
+          TopLeft="231.999996542931,91.9999986290932" />
+        <NodeLayout
+          Size="156,41.6"
+          Id="Package\Fact Table Build\Data Flow Task\fact_Project_use"
+          TopLeft="344.999994859099,317.999995261431" />
+        <EdgeLayout
+          Id="Package\Fact Table Build\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="307.999996542931,133.599998629093">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="114.999998316169,184.399996632338"
+              Start="0,0"
+              End="114.999998316169,176.899996632338">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,88.1999983161688" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,88.1999983161688"
+                    Point2="0,92.1999983161688"
+                    Point3="4,92.1999983161688" />
+                  <mssgle:LineSegment
+                    End="110.999998316169,92.1999983161688" />
+                  <mssgle:CubicBezierSegment
+                    Point1="110.999998316169,92.1999983161688"
+                    Point2="114.999998316169,92.1999983161688"
+                    Point3="114.999998316169,96.1999983161688" />
+                  <mssgle:LineSegment
+                    End="114.999998316169,176.899996632338" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Staging import\Import to Stage\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Staging import\Import to Stage\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Builds\Area Dim\Dim_Area_lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dim].[Area_use]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dimension Builds\Area Dim\Dim_Area_use">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fact Table Build\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fact Table Build\Data Flow Task\fact_Project_use">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
